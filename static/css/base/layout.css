@@ -1,0 +1,12 @@
+.layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #533738;
+    background-color: #EFE6E4;
+}
