@@ -1,0 +1,115 @@
+.projects__main_header {
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.projects__wrapper {
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: 488px 184px 488px;
+    grid-template-rows: 451px 451px;
+    column-gap: 20px;
+    row-gap: 30px;
+
+    color: #FFFFFF;
+}
+
+.projects__project:nth-child(1) {
+    background: no-repeat url('/static/image/projects_1.jpg');
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.projects__project:nth-child(2) {
+    background: no-repeat url('/static/image/projects_2.jpg');
+    background-size: cover;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.projects__project:nth-child(3) {
+    background: no-repeat url('/static/image/projects_3.jpg');
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.projects__project:nth-child(4) {
+    background: no-repeat url('/static/image/projects_4.jpg');
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.projects__hover {
+    visibility: hidden;
+    background-color: rgba(100, 72, 69, 0.8);
+    height: 451px;
+}
+
+.projects__hover:hover {
+    visibility: visible;
+}
+
+.projects__header {
+    width: 270px;
+    margin: 0 auto 18px auto;
+    padding-top: 86px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.projects__description {
+    width: 418px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.projects__link {
+    display: block;
+    position: relative;
+    margin: 0 auto 65px auto;
+    padding-right: 70px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-decoration: none;
+    text-align: center;
+    color: #533738;
+}
+
+.projects__link::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    left: 728px;
+    bottom: 15px;
+    border-top: 2px solid #533738;
+    border-right: 2px solid #533738;
+    transform: rotate(45deg);
+}
+
+.projects__link::after {
+    display: block;
+    position: absolute;
+    content: " ";
+    bottom: 20px;
+    left: 680px;
+    width: 60px;
+    border-top: 2px solid #533738;
+}
