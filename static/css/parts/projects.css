@@ -47,13 +47,15 @@
 }
 
 .projects__hover {
-    visibility: hidden;
+    opacity: 0;
     background-color: rgba(100, 72, 69, 0.8);
     height: 451px;
 }
 
-.projects__hover:hover {
-    visibility: visible;
+.projects__project:hover > .projects__hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-property: opacity;
 }
 
 .projects__header {
